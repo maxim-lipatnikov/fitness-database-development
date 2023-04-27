@@ -24,7 +24,7 @@ This is one of my university projects where I practiced in prototyping and devel
 
 Physical model:
 
-<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/diagrams/er_physical.JPG" width="700" />
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/diagrams/er_physical.png" width="700" />
 
 Diagram of the database:
 
