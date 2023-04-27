@@ -74,12 +74,86 @@ Diagram of the database:
 Testing:
 
 <img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%201%20try.png" width="500" />
-<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%201%20result.png" width="500" />
 
-2. Trigger adds a new empty group for clients if a new group tour as added to the database
-<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%201%20(add%20new%20empty%20group%20if%20new%20group%20tour%20is%20added).png" width="500" />
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%201%20result%201.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%201%20result%202.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%201%20result%203.png" width="500" />
+
+2. Trigger does not let a client without a VISA or a foreign passport buy a voucher
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%202%20(client%20without%20foreign%20pass%20or%20visa%20can%20not%20buy%20a%20voucher).png" width="500" />
 
 Testing:
 
-<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%201%20try.png" width="500" />
-<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%201%20result.png" width="500" />
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%202%20try.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%202%20result.png" width="500" />
+
+3. Trigger sets a discount for a voucher based on client's age and time before tour starts
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%203%20(set%20discount%20based%20on%20age%20and%20time%20before%20tour%20start).png" width="500" />
+
+Testing:
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%203%20try%201.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%203%20try%202.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%203%20result%201.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%203%20result%202.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%203%20result%203.png" width="500" />
+
+4. Trigger sets group's attibute "isFull" to "True" if 10 vouchers are sold for this group tour and sets "False" if a voucher was deleted from the databse and total number of people in the group is less than 10
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%204%20(group%20is%20full%20when%2010%20clients%20in%20it).png" width="500" />
+
+Testing:
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%204%20try%201.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%204%20try%202.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%204%20result%201.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/triggers/trigger%204%20result%202.png" width="500" />
+
+### Procedures examples
+
+1. Procedure adds new client to the database
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%201%20adding%20new%20client.png" width="500" />
+
+Testing:
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%201%20try%201.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%201%20try%202.png" width="500" />
+
+2. Procedure adds new a sold voucher
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%202%20adding%20new%20voucher.png" width="500" />
+
+Testing:
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%202%20try%201.png" width="500" />
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%202%20try%202.png" width="500" />
+
+3. Similar procedure adds a new tour to the DB
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%203%20adding%20new%20tour.png" width="500" />
+
+4. Similar procedure that adds a new worker to the DB
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%204%20adding%20new%20worker.png" width="500" />
+
+5. Procedure deletes a client from the DB
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%205%20delete%20client.png" width="500" />
+
+Testing:
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%205%20try.png" width="500" />
+
+6. Procedure returns all hotels in a selected city with a selected service level
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%206%20find%20hotels%20in%20certain%20city%20with%20certaion%20service%20level.png" width="500" />
+
+Testing:
+
+<img src="https://github.com/maxim-lipatnikov/travel-agency-database-development/blob/main/procedures/proc%206%20try.png" width="500" />
